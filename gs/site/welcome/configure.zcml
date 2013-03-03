@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configure xmlns="http://namespaces.zope.org/zope"
+  xmlns:browser="http://namespaces.zope.org/browser"
+  xmlns:five="http://namespaces.zope.org/five"
+  i18n_domain="groupserver">
+
+  <!--The Change Page -->
+
+  <browser:page
+    name="admin_changewelcome.html"
+    for="Products.GSContent.interfaces.IGSSiteFolder"
+    class=".change.Change"
+    permission="zope2.ManageProperties"/>
+  <browser:resource 
+    name="gs-site-welcome-change-20130304.js"
+    file="browser/javascript/change.js"
+    permission="zope2.Public" />
+
+
+</configure>
