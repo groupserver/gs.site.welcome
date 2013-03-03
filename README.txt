@@ -16,10 +16,19 @@ The Welcome message on a GroupServer Site
 Introduction
 ============
 
+The `Welcome Box`_ shows the introductory text on the homepage of a
+GroupServer_ site. It is modified by the `Change page`_.
+
+Welcome Box
+===========
+
+Change Page
+===========
+
 Resources
 =========
 
-- Code repository: https://source.iopen.net/groupserver/gs.site.about/
+- Code repository: https://source.iopen.net/groupserver/gs.site.welcome/
 - Questions and comments to http://groupserver.org/groups/development/
 - Report bugs at https://redmine.iopen.net/projects/groupserver/
 
