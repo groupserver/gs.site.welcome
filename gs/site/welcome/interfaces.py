@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from zope.interface.interface import Interface
 from zope.schema import Text, TextLine
+from zope.viewlet.interfaces import IViewletManager
 
 
 class IChangeWelcome(Interface):
@@ -15,3 +16,7 @@ class IChangeWelcome(Interface):
                     description=u'The text of the message that appears on the '
                         u'site homepage.',
                     required=True)
+
+
+class IWelcomeBox(IViewletManager):
+    '''The Welcome box.'''

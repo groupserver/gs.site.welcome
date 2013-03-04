@@ -4,6 +4,34 @@
   xmlns:five="http://namespaces.zope.org/five"
   i18n_domain="groupserver">
 
+  <!-- The Welcome Box -->
+
+  <browser:viewlet
+    name="gs-site-welcome"
+    for="Products.GSContent.interfaces.IGSSiteFolder"
+    manager="gs.site.home.interfaces.ISiteHomeMain"
+    class=".box.WelcomeBox"
+    template="browser/templates/box.pt"
+    weight="10"
+    permission="zope2.View" />
+
+  <browser:viewletManager
+    name="groupserver.SiteHomeWelcome"
+    for="Products.GSContent.interfaces.IGSSiteFolder"
+    provides=".interfaces.IWelcomeBox"
+    class="gs.viewlet.manager.WeightOrderedViewletManager"
+    template="browser/templates/simplemanager.pt"
+    permission="zope2.View" />
+
+  <browser:viewlet
+    name="gs-site-welcome-message"
+    for="Products.GSContent.interfaces.IGSSiteFolder"
+    manager=".interfaces.IWelcomeBox"
+    class=".box.WelcomeBox"
+    template="browser/templates/message.pt"
+    weight="20"
+    permission="zope2.View" />
+
   <!--The Change Page -->
 
   <browser:page
@@ -15,6 +43,12 @@
     name="gs-site-welcome-change-20130304.js"
     file="browser/javascript/change.js"
     permission="zope2.Public" />
-
-
+  <browser:viewlet
+    name="gs-site-welcome-change"
+    for="Products.GSContent.interfaces.IGSSiteFolder"
+    manager=".interfaces.IWelcomeBox"
+    class="gs.viewlet.SiteViewlet"
+    template="browser/templates/changelink.pt"
+    weight="10"
+    permission="zope2.View" />
 </configure>

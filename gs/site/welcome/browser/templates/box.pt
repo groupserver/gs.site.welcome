@@ -1,0 +1,7 @@
+<div id="gs-site-welcome" role="region" aria-labelledby="gs-site-welcome-h">
+  <h2 id="gs-site-welcome-h" 
+      tal:content="view/welcomeMessage/greeting">Fish Pie</h2>
+  <p tal:replace="structure provider:groupserver.SiteHomeWelcome">
+    I am a fish.
+  </p>
+</div><!--gs-site-welcome-->
