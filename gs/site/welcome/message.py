@@ -23,9 +23,12 @@ class WelcomeMessage(object):
     def create_welcome(self):
         folder = self.siteInfo.siteObj
         manageAdd = folder.manage_addProduct['PageTemplates']
-        manageAdd.manage_addPageTemplate(self.welcomeId, title='', text='',
+        manageAdd.manage_addPageTemplate(self.welcomeId, title=u'', text=u'',
                                             REQUEST=None)
-        return getattr(folder, self.welcomeId)
+        retval = getattr(folder, self.welcomeId)
+        assert retval
+        retval.write(u'')
+        return retval
 
     greeting_doc = u'The greeting on the site.'
 
@@ -44,7 +47,7 @@ class WelcomeMessage(object):
 
     @Lazy
     def defaultMsg(self):
-        retval = 'Welcome to {0}.'.format(self.siteInfo.name)
+        retval = u'Welcome to {0}.'.format(self.siteInfo.name)
         return retval
 
     def get_message(self):
