@@ -45,7 +45,8 @@ The *Change* page ``/admin_changewelcome.html`` is used by the
 site-administrator to change the welcome message. The form uses the
 ``WelcomeMessage`` class to change both the greeting and the message.
 
-The Change page is linked from the 
+The Change page is linked from a viewlet that is added to the `Welcome
+Box`_
 
 ``WelcomeMessage`` Class
 ========================
