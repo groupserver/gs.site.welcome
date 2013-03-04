@@ -25,13 +25,13 @@ class WelcomeMessage(object):
         manageAdd = folder.manage_addProduct['PageTemplates']
         manageAdd.manage_addPageTemplate(self.welcomeId, title='', text='',
                                             REQUEST=None)
-        return getattr(folder, self.greetingwelcomeId)
+        return getattr(folder, self.welcomeId)
 
     greeting_doc = u'The greeting on the site.'
 
     def get_greeting(self):
         t = self.pageTemplate.title
-        retval = t if self.t else u'Welcome'
+        retval = t if t else u'Welcome'
         assert retval
         return retval
 
