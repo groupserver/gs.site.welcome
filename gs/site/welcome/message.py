@@ -47,7 +47,10 @@ class WelcomeMessage(object):
 
     @Lazy
     def defaultMsg(self):
-        retval = u'Welcome to {0}.'.format(self.siteInfo.name)
+        m = u'''<p>Welcome to the new online group site for {0}. We hope
+        that this will be a useful way for everyone to discuss and share
+        information.</p>'''
+        retval = m.format(self.siteInfo.name)
         return retval
 
     def get_message(self):
