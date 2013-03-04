@@ -1,2 +1,2 @@
 # -*- coding: utf-8 -*-
-# This space deliberately left blank.
+from message import WelcomeMessage  # lint:ok
