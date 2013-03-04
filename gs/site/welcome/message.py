@@ -32,9 +32,14 @@ class WelcomeMessage(object):
 
     greeting_doc = u'The greeting on the site.'
 
+    @Lazy
+    def defaultGreeting(self):
+        retval = u'Welcome'
+        return retval
+
     def get_greeting(self):
         t = self.pageTemplate.title
-        retval = t if t else u'Welcome'
+        retval = t if t else self.defaultGreeting
         assert retval
         return retval
 
