@@ -50,5 +50,5 @@
     class="gs.viewlet.SiteViewlet"
     template="browser/templates/changelink.pt"
     weight="10"
-    permission="zope2.View" />
+    permission="zope2.ManageProperties" />
 </configure>
