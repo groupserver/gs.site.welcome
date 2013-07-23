@@ -10,7 +10,7 @@ from message import WelcomeMessage
 
 
 class Change(SiteForm):
-    label = u'Change the Welcome'
+    label = u'Change the welcome'
     pageTemplateFileName = 'browser/templates/change.pt'
     template = ZopeTwoPageTemplateFile(pageTemplateFileName)
 
