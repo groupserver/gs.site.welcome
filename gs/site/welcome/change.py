@@ -4,7 +4,7 @@ from zope.cachedescriptors.property import Lazy
 from zope.formlib import form
 from Products.Five.browser.pagetemplatefile import ZopeTwoPageTemplateFile
 from gs.content.form.base import SiteForm
-from gs.content.form.wymeditor import wym_editor_widget
+from gs.content.form.base.wymeditor import wym_editor_widget
 from .interfaces import IChangeWelcome
 from .message import WelcomeMessage
 #from audit import ChangeAuditor, CHANGE
