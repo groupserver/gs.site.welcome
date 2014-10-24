@@ -1,5 +1,20 @@
 # -*- coding: utf-8 -*-
+############################################################################
+#
+# Copyright © 2013, 2014 OnlineGroups.net and Contributors.
+# All Rights Reserved.
+#
+# This software is subject to the provisions of the Zope Public License,
+# Version 2.1 (ZPL).  A copy of the ZPL should accompany this distribution.
+# THIS SOFTWARE IS PROVIDED "AS IS" AND ANY AND ALL EXPRESS OR IMPLIED
+# WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+# WARRANTIES OF TITLE, MERCHANTABILITY, AGAINST INFRINGEMENT, AND FITNESS
+# FOR A PARTICULAR PURPOSE.
+#
+############################################################################
+from __future__ import unicode_literals
 from zope.cachedescriptors.property import Lazy
+from . import GSMessageFactory as _
 
 
 class WelcomeMessage(object):
@@ -11,7 +26,7 @@ class WelcomeMessage(object):
 
     @Lazy
     def pageTemplate(self):
-        u'''Get the page template for the Welcome message, creating it if
+        '''Get the page template for the Welcome message, creating it if
         necessary'''
         r = getattr(self.siteInfo.siteObj, self.welcomeId, None)
         if not r:
@@ -23,18 +38,18 @@ class WelcomeMessage(object):
     def create_welcome(self):
         folder = self.siteInfo.siteObj
         manageAdd = folder.manage_addProduct['PageTemplates']
-        manageAdd.manage_addPageTemplate(self.welcomeId, title=u'', text=u'',
-                                            REQUEST=None)
+        manageAdd.manage_addPageTemplate(self.welcomeId, title='',
+                                         text='', REQUEST=None)
         retval = getattr(folder, self.welcomeId)
         assert retval
-        retval.write(u'')
+        retval.write('')
         return retval
 
-    greeting_doc = u'The greeting on the site.'
+    greeting_doc = 'The greeting on the site.'
 
     @Lazy
     def defaultGreeting(self):
-        retval = u'Welcome'
+        retval = _('Welcome')
         return retval
 
     def get_greeting(self):
@@ -48,14 +63,16 @@ class WelcomeMessage(object):
 
     greeting = property(get_greeting, set_greeting, greeting_doc)
 
-    message_doc = u'The Welcome message on the site.'
+    message_doc = 'The Welcome message on the site.'
 
     @Lazy
     def defaultMsg(self):
-        m = u'''<p>Welcome to the new online group site for {0}. We hope
-        that this will be a useful way for everyone to discuss and share
-        information.</p>'''
-        retval = m.format(self.siteInfo.name)
+        retval = _(
+            'default-welcome-message',
+            '<p>Welcome to the new online group site for ${siteName}. We '
+            'hope that this will be a useful way for everyone to discuss '
+            'and share information.</p>',
+            mapping={'siteName': self.siteInfo.name})
         return retval
 
     def get_message(self):

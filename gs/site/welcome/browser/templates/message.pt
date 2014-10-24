@@ -1,4 +1,4 @@
-<div id="gs-site-welcome-message" 
+<div id="gs-site-welcome-message"
      tal:content="structure view/welcomeMessage/message">
   I am a fish.
 </div><!--gs-site-welcome-message-->
