@@ -58,6 +58,7 @@ setup(
         'zope.browserresource',
         'zope.cachedescriptors',
         'zope.formlib',
+        'zope.i18n',
         'zope.interface',
         'zope.schema',
         'zope.tal',
