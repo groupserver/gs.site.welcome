@@ -12,13 +12,13 @@
 # FOR A PARTICULAR PURPOSE.
 #
 ############################################################################
-from __future__ import unicode_literals
+from __future__ import unicode_literals, absolute_import
 from zope.cachedescriptors.property import Lazy
 from . import GSMessageFactory as _
 
 
 class WelcomeMessage(object):
-    welcomeId = 'welcome'
+    welcomeId = b'welcome'
 
     def __init__(self, siteInfo):
         assert siteInfo, 'siteInfo is {0}'.format(type(siteInfo))

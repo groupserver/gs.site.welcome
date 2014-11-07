@@ -1,12 +1,18 @@
 Changelog
 =========
 
+2.1.1 (2014-11-07)
+------------------
+
+* Changing the object-ID for the ``welcome`` template to be
+  ASCII
+
 2.1.0 (2014-10-24)
 ------------------
 
 * Adding internationalisation
 * Using GitHub_ as the main code repository, and naming the
-  reStructuredText files as such.
+  reStructuredText files as such
 
 .. _GitHub: https://github.com/groupserver/gs.site.welcome/
 
