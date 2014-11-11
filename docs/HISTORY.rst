@@ -1,6 +1,12 @@
 Changelog
 =========
 
+2.1.2 (2014-11-10)
+------------------
+
+* Showing the translated default text shown on the *Change
+  welcome* page, rather than the string ID
+
 2.1.1 (2014-11-07)
 ------------------
 

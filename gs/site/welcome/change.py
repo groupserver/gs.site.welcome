@@ -15,6 +15,7 @@
 from __future__ import absolute_import, unicode_literals
 from zope.cachedescriptors.property import Lazy
 from zope.formlib import form
+from zope.i18n import translate
 from Products.Five.browser.pagetemplatefile import ZopeTwoPageTemplateFile
 from gs.content.form.base import SiteForm
 from gs.content.form.base.wymeditor import wym_editor_widget
@@ -44,8 +45,8 @@ class Change(SiteForm):
         return retval
 
     def setUpWidgets(self, ignore_request=False):
-        data = {'greeting': self.welcomeMessage.greeting,
-                'message': self.welcomeMessage.message}
+        data = {'greeting': translate(self.welcomeMessage.greeting),
+                'message': translate(self.welcomeMessage.message)}
 
         self.widgets = form.setUpWidgets(
             self.form_fields, self.prefix, self.context,
