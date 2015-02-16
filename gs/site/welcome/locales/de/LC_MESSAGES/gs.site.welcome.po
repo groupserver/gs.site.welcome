@@ -1,18 +1,22 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: gs.site.welcome\n"
 "POT-Creation-Date: 2014-10-24 22:58+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"PO-Revision-Date: 2015-02-16 13:40+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language-Team: German (http://www.transifex.com/projects/p/gs-site-welcome/language/de/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0\n"
+"Domain: gs.site.welcome\n"
+"Language: de\n"
 "Language-Code: en\n"
 "Language-Name: English\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Preferred-Encodings: utf-8 latin1\n"
-"Domain: DOMAIN\n"
 
 #: ./change.py:68
 msgid "<p>There are errors:</p>"
@@ -22,8 +26,7 @@ msgstr ""
 msgid "<p>There is an error:</p>"
 msgstr ""
 
-#: ./browser/templates/changelink.pt:1
-#: ./change.py:55
+#: ./browser/templates/changelink.pt:1 ./change.py:55
 msgid "Change"
 msgstr ""
 
@@ -47,18 +50,19 @@ msgstr ""
 msgid "The text of the message that appears on the site homepage."
 msgstr ""
 
-#: ./interfaces.py:28
-#: ./message.py:52
+#: ./interfaces.py:28 ./message.py:52
 msgid "Welcome"
 msgstr ""
 
-#. Default: "The welcome that appears on <a href=\"/\">the site homepage</a> has been changed."
+#. Default: "The welcome that appears on <a href=\"/\">the site homepage</a>
+#. has been changed."
 #: ./change.py:59
 msgid "change-success"
 msgstr ""
 
-#. Default: "<p>Welcome to the new online group site for ${siteName}. We hope that this will be a useful way for everyone to discuss and share information.</p>"
+#. Default: "<p>Welcome to the new online group site for ${siteName}. We hope
+#. that this will be a useful way for everyone to discuss and share
+#. information.</p>"
 #: ./message.py:70
 msgid "default-welcome-message"
 msgstr ""
-
