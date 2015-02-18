@@ -1,68 +1,67 @@
 # --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
 # SOME DESCRIPTIVE TITLE.
 # Translators:
+# Mohamed-Younès BOUMEDIENE <m-boumediene@live.fr>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: gs.site.welcome\n"
-"POT-Creation-Date: 2014-10-24 22:58+0000\n"
-"PO-Revision-Date: 2015-02-16 13:40+0000\n"
-"Last-Translator: Alice Rose <heldinz@posteo.de>\n"
+"POT-Creation-Date: 2015-02-18 13:42+0000\n"
+"PO-Revision-Date: 2015-02-17 18:48+0000\n"
+"Last-Translator: Mohamed-Younès BOUMEDIENE <m-boumediene@live.fr>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/gs-site-welcome/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Domain: gs.site.welcome\n"
-"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "Language-Code: en\n"
 "Language-Name: English\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "Preferred-Encodings: utf-8 latin1\n"
+"Domain: gs.site.welcome\n"
+"Language: fr\n"
 
 #: ./change.py:68
 msgid "<p>There are errors:</p>"
-msgstr ""
+msgstr "<p>Il y a des erreurs :</p>"
 
 #: ./change.py:66
 msgid "<p>There is an error:</p>"
+msgstr "<p>Il y a une erreur :</p>"
+
+#: ./message.py:70
+msgid "<p>Welcome to the new online group site for ${siteName}. We hope that this will be a useful way for everyone to discuss and share information.</p>"
 msgstr ""
 
-#: ./browser/templates/changelink.pt:1 ./change.py:55
+#: ./browser/templates/changelink.pt:1
+#: ./change.py:56
 msgid "Change"
-msgstr "Changez"
+msgstr "Changer"
 
-#: ./change.py:28
+#: ./change.py:29
 msgid "Change the welcome"
-msgstr "Changez l'accueil"
+msgstr "Changer l'accueil"
 
 #: ./interfaces.py:25
 msgid "Greeting"
-msgstr "L'accueil"
+msgstr "Salutation"
 
 #: ./interfaces.py:31
 msgid "Message"
-msgstr ""
+msgstr "Message"
 
 #: ./interfaces.py:26
 msgid "The greeting that appears in the Welcome message"
-msgstr ""
+msgstr "La salutation apparaît dans le message de bienvenue"
 
 #: ./interfaces.py:32
 msgid "The text of the message that appears on the site homepage."
+msgstr "Le texte du message apparaît sur la page d'accueil du site."
+
+#: ./change.py:60
+msgid "The welcome that appears on <a href=\"/\">the site homepage</a> has been changed."
 msgstr ""
 
-#: ./interfaces.py:28 ./message.py:52
+#: ./interfaces.py:28
+#: ./message.py:52
 msgid "Welcome"
 msgstr "Bienvenue"
 
-#. Default: "The welcome that appears on <a href=\"/\">the site homepage</a>
-#. has been changed."
-#: ./change.py:59
-msgid "change-success"
-msgstr ""
-
-#. Default: "<p>Welcome to the new online group site for ${siteName}. We hope
-#. that this will be a useful way for everyone to discuss and share
-#. information.</p>"
-#: ./message.py:70
-msgid "default-welcome-message"
-msgstr ""

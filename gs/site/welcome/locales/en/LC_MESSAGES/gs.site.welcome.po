@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2014-10-24 22:58+0000\n"
+"POT-Creation-Date: 2015-02-18 13:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,12 +22,16 @@ msgstr ""
 msgid "<p>There is an error:</p>"
 msgstr ""
 
+#: ./message.py:70
+msgid "<p>Welcome to the new online group site for ${siteName}. We hope that this will be a useful way for everyone to discuss and share information.</p>"
+msgstr ""
+
 #: ./browser/templates/changelink.pt:1
-#: ./change.py:55
+#: ./change.py:56
 msgid "Change"
 msgstr ""
 
-#: ./change.py:28
+#: ./change.py:29
 msgid "Change the welcome"
 msgstr ""
 
@@ -47,18 +51,12 @@ msgstr ""
 msgid "The text of the message that appears on the site homepage."
 msgstr ""
 
+#: ./change.py:60
+msgid "The welcome that appears on <a href=\"/\">the site homepage</a> has been changed."
+msgstr ""
+
 #: ./interfaces.py:28
 #: ./message.py:52
 msgid "Welcome"
-msgstr ""
-
-#. Default: "The welcome that appears on <a href=\"/\">the site homepage</a> has been changed."
-#: ./change.py:59
-msgid "change-success"
-msgstr ""
-
-#. Default: "<p>Welcome to the new online group site for ${siteName}. We hope that this will be a useful way for everyone to discuss and share information.</p>"
-#: ./message.py:70
-msgid "default-welcome-message"
 msgstr ""
 

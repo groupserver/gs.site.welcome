@@ -68,7 +68,6 @@ class WelcomeMessage(object):
     @Lazy
     def defaultMsg(self):
         retval = _(
-            'default-welcome-message',
             '<p>Welcome to the new online group site for ${siteName}. We '
             'hope that this will be a useful way for everyone to discuss '
             'and share information.</p>',

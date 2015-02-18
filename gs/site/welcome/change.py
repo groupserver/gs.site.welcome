@@ -58,7 +58,6 @@ class Change(SiteForm):
         self.welcomeMessage.greeting = data['greeting']
         self.welcomeMessage.message = data['message']
         self.status = _(
-            'change-success',
             'The welcome that appears on <a href="/">the site homepage</a> '
             'has been changed.')
 
