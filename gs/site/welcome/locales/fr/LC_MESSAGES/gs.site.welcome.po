@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gs.site.welcome\n"
-"POT-Creation-Date: 2015-02-18 13:42+0000\n"
+"POT-Creation-Date: 2015-02-19 05:54+0000\n"
 "PO-Revision-Date: 2015-02-17 18:48+0000\n"
 "Last-Translator: Mohamed-Younès BOUMEDIENE <m-boumediene@live.fr>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/gs-site-welcome/language/fr/)\n"
@@ -19,49 +19,64 @@ msgstr ""
 "Domain: gs.site.welcome\n"
 "Language: fr\n"
 
-#: ./change.py:68
-msgid "<p>There are errors:</p>"
-msgstr "<p>Il y a des erreurs :</p>"
-
-#: ./change.py:66
-msgid "<p>There is an error:</p>"
-msgstr "<p>Il y a une erreur :</p>"
-
-#: ./message.py:70
-msgid "<p>Welcome to the new online group site for ${siteName}. We hope that this will be a useful way for everyone to discuss and share information.</p>"
-msgstr ""
-
-#: ./browser/templates/changelink.pt:1
+#. Default: "Change"
 #: ./change.py:56
-msgid "Change"
+msgid "change-action"
 msgstr "Changer"
 
-#: ./change.py:29
-msgid "Change the welcome"
-msgstr "Changer l'accueil"
+#. Default: "Change"
+#: ./browser/templates/changelink.pt:1
+msgid "change-link"
+msgstr "Changer"
 
-#: ./interfaces.py:25
-msgid "Greeting"
-msgstr "Salutation"
-
-#: ./interfaces.py:31
-msgid "Message"
-msgstr "Message"
-
-#: ./interfaces.py:26
-msgid "The greeting that appears in the Welcome message"
-msgstr "La salutation apparaît dans le message de bienvenue"
-
-#: ./interfaces.py:32
-msgid "The text of the message that appears on the site homepage."
-msgstr "Le texte du message apparaît sur la page d'accueil du site."
-
-#: ./change.py:60
-msgid "The welcome that appears on <a href=\"/\">the site homepage</a> has been changed."
+#. Default: "The welcome that appears on <a href=\"/\">the site homepage</a> has been changed."
+#: ./change.py:61
+msgid "change-success"
 msgstr ""
 
-#: ./interfaces.py:28
+#. Default: "Change the welcome"
+#: ./change.py:29
+msgid "change-welcome-form-label"
+msgstr ""
+
+#. Default: "Welcome"
+#: ./interfaces.py:29
 #: ./message.py:52
-msgid "Welcome"
+msgid "default-greeting"
 msgstr "Bienvenue"
+
+#. Default: "<p>Welcome to the new online group site for ${siteName}. We hope that this will be a useful way for everyone to discuss and share information.</p>"
+#: ./message.py:70
+msgid "default-welcome-message"
+msgstr ""
+
+#. Default: "The greeting that appears in the Welcome message"
+#: ./interfaces.py:26
+msgid "greeting-entry-description"
+msgstr "La salutation apparaît dans le message de bienvenue"
+
+#. Default: "Greeting"
+#: ./interfaces.py:25
+msgid "greeting-entry-label"
+msgstr "Salutation"
+
+#. Default: "<p>There is an error:</p>"
+#: ./change.py:68
+msgid "status-problem"
+msgstr "<p>Il y a une erreur :</p>"
+
+#. Default: "<p>There are errors:</p>"
+#: ./change.py:71
+msgid "status-problems"
+msgstr "<p>Il y a des erreurs :</p>"
+
+#. Default: "The text of the message that appears on the site homepage."
+#: ./interfaces.py:33
+msgid "welcome-message-entry-description"
+msgstr "Le texte du message apparaît sur la page d'accueil du site."
+
+#. Default: "Message"
+#: ./interfaces.py:32
+msgid "welcome-message-entry-label"
+msgstr "Message"
 

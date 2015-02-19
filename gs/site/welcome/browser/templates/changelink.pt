@@ -1,6 +1,6 @@
 <a xmlns:i18n="http://xml.zope.org/namespaces/i18n"
    i18n:domain="gs.site.welcome"
-   i18n:translate=""
+   i18n:translate="change-link"
    id="gs-site-welcome-change"
    href="/admin_changewelcome.html"
    class="btn btn-small">Change</a>

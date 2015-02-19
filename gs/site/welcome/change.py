@@ -26,7 +26,7 @@ from . import GSMessageFactory as _
 
 
 class Change(SiteForm):
-    label = _('Change the welcome')
+    label = _('change-welcome-form-label', 'Change the welcome')
     pageTemplateFileName = 'browser/templates/change.pt'
     template = ZopeTwoPageTemplateFile(pageTemplateFileName)
 
@@ -53,16 +53,20 @@ class Change(SiteForm):
             self.request, form=self, data=data,
             ignore_request=ignore_request)
 
-    @form.action(label=_('Change'), failure='handle_change_action_failure')
+    @form.action(label=_('change-action', 'Change'), 
+                 failure='handle_change_action_failure')
     def handle_change(self, action, data):
         self.welcomeMessage.greeting = data['greeting']
         self.welcomeMessage.message = data['message']
         self.status = _(
+            'change-success',
             'The welcome that appears on <a href="/">the site homepage</a> '
             'has been changed.')
 
     def handle_change_action_failure(self, action, data, errors):
         if len(errors) == 1:
-            self.status = _('<p>There is an error:</p>')
+            self.status = _(
+                'status-problem', '<p>There is an error:</p>')
         else:
-            self.status = _('<p>There are errors:</p>')
+            self.status = _(
+                'status-problems', '<p>There are errors:</p>')

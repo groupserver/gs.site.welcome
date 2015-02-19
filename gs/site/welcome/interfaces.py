@@ -22,15 +22,16 @@ from . import GSMessageFactory as _
 class IChangeWelcome(Interface):
 
     greeting = TextLine(
-        title=_('Greeting'),
-        description=_('The greeting that appears in the Welcome message'),
+        title=_('greeting-entry-label', 'Greeting'),
+        description=_('greeting-entry-description', 
+            'The greeting that appears in the Welcome message'),
         required=True,
-        default=_('Welcome'))
+        default=_('default-greeting', 'Welcome'))
 
     message = Text(
-        title=_('Message'),
-        description=_('The text of the message that appears on the site '
-                      'homepage.'),
+        title=_('welcome-message-entry-label', 'Message'),
+        description=_('welcome-message-entry-description', 
+            'The text of the message that appears on the site homepage.'),
         required=True)
 
 
