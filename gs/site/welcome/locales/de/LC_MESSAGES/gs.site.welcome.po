@@ -1,22 +1,22 @@
-# 
+#
 # Translators:
 # Alice Rose <heldinz@posteo.de>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: gs.site.welcome\n"
-"POT-Creation-Date: 2015-02-19 05:54+0000\n"
+"POT-Creation-Date: 2015-02-22 22:38+0000\n"
 "PO-Revision-Date: 2015-02-22 20:53+0000\n"
 "Last-Translator: Alice Rose <heldinz@posteo.de>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/gs-site-welcome/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Domain: DOMAIN\n"
-"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Language-Code: en\n"
 "Language-Name: English\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Preferred-Encodings: utf-8 latin1\n"
+"Domain: DOMAIN\n"
+"Language: de\n"
 
 #. Default: "Change"
 #: ./change.py:56
@@ -28,8 +28,8 @@ msgstr "Ändern"
 msgid "change-link"
 msgstr "Ändern"
 
-#. Default: "The welcome that appears on <a href=\"/\">the site homepage</a>
 #. has been changed."
+#. Default: "The welcome that appears on <a href=\"/\">the site homepage</a> has been changed."
 #: ./change.py:61
 msgid "change-success"
 msgstr ""
@@ -40,13 +40,14 @@ msgid "change-welcome-form-label"
 msgstr ""
 
 #. Default: "Welcome"
-#: ./interfaces.py:29 ./message.py:52
+#: ./interfaces.py:29
+#: ./message.py:52
 msgid "default-greeting"
 msgstr "Willkommen"
 
-#. Default: "<p>Welcome to the new online group site for ${siteName}. We hope
 #. that this will be a useful way for everyone to discuss and share
 #. information.</p>"
+#. Default: "<p>Welcome to the new online group site for ${siteName}. We hope that this will be a useful way for everyone to discuss and share information.</p>"
 #: ./message.py:70
 msgid "default-welcome-message"
 msgstr ""
@@ -80,3 +81,4 @@ msgstr ""
 #: ./interfaces.py:32
 msgid "welcome-message-entry-label"
 msgstr "Nachricht"
+

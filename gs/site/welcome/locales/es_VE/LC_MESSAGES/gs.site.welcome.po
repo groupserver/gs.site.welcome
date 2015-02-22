@@ -17,61 +17,61 @@ msgstr ""
 #. Default: "Change"
 #: ./change.py:56
 msgid "change-action"
-msgstr "Change"
+msgstr ""
 
 #. Default: "Change"
 #: ./browser/templates/changelink.pt:1
 msgid "change-link"
-msgstr "Change"
+msgstr ""
 
 #. Default: "The welcome that appears on <a href=\"/\">the site homepage</a> has been changed."
 #: ./change.py:61
 msgid "change-success"
-msgstr "The welcome that appears on <a href=\"/\">the site homepage</a> has been changed."
+msgstr ""
 
 #. Default: "Change the welcome"
 #: ./change.py:29
 msgid "change-welcome-form-label"
-msgstr "Change the welcome"
+msgstr ""
 
 #. Default: "Welcome"
 #: ./interfaces.py:29
 #: ./message.py:52
 msgid "default-greeting"
-msgstr "Welcome"
+msgstr ""
 
 #. Default: "<p>Welcome to the new online group site for ${siteName}. We hope that this will be a useful way for everyone to discuss and share information.</p>"
 #: ./message.py:70
 msgid "default-welcome-message"
-msgstr "<p>Welcome to the new online group site for ${siteName}. We hope that this will be a useful way for everyone to discuss and share information.</p>"
+msgstr ""
 
 #. Default: "The greeting that appears in the Welcome message"
 #: ./interfaces.py:26
 msgid "greeting-entry-description"
-msgstr "The greeting that appears in the Welcome message"
+msgstr ""
 
 #. Default: "Greeting"
 #: ./interfaces.py:25
 msgid "greeting-entry-label"
-msgstr "Greeting"
+msgstr ""
 
 #. Default: "<p>There is an error:</p>"
 #: ./change.py:68
 msgid "status-problem"
-msgstr "<p>There is an error:</p>"
+msgstr ""
 
 #. Default: "<p>There are errors:</p>"
 #: ./change.py:71
 msgid "status-problems"
-msgstr "<p>There are errors:</p>"
+msgstr ""
 
 #. Default: "The text of the message that appears on the site homepage."
 #: ./interfaces.py:33
 msgid "welcome-message-entry-description"
-msgstr "The text of the message that appears on the site homepage."
+msgstr ""
 
 #. Default: "Message"
 #: ./interfaces.py:32
 msgid "welcome-message-entry-label"
-msgstr "Message"
+msgstr ""
 
