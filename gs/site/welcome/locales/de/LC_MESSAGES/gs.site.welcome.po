@@ -1,35 +1,35 @@
-# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
-# SOME DESCRIPTIVE TITLE.
+# 
 # Translators:
 # Alice Rose <heldinz@posteo.de>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: gs.site.welcome\n"
 "POT-Creation-Date: 2015-02-19 05:54+0000\n"
-"PO-Revision-Date: 2015-02-18 15:16+0000\n"
+"PO-Revision-Date: 2015-02-22 20:53+0000\n"
 "Last-Translator: Alice Rose <heldinz@posteo.de>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/gs-site-welcome/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Domain: DOMAIN\n"
+"Language: de\n"
 "Language-Code: en\n"
 "Language-Name: English\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Preferred-Encodings: utf-8 latin1\n"
-"Domain: gs.site.welcome\n"
-"Language: de\n"
 
 #. Default: "Change"
 #: ./change.py:56
 msgid "change-action"
-msgstr ""
+msgstr "Ändern"
 
 #. Default: "Change"
 #: ./browser/templates/changelink.pt:1
 msgid "change-link"
-msgstr ""
+msgstr "Ändern"
 
-#. Default: "The welcome that appears on <a href=\"/\">the site homepage</a> has been changed."
+#. Default: "The welcome that appears on <a href=\"/\">the site homepage</a>
+#. has been changed."
 #: ./change.py:61
 msgid "change-success"
 msgstr ""
@@ -40,12 +40,13 @@ msgid "change-welcome-form-label"
 msgstr ""
 
 #. Default: "Welcome"
-#: ./interfaces.py:29
-#: ./message.py:52
+#: ./interfaces.py:29 ./message.py:52
 msgid "default-greeting"
-msgstr ""
+msgstr "Willkommen"
 
-#. Default: "<p>Welcome to the new online group site for ${siteName}. We hope that this will be a useful way for everyone to discuss and share information.</p>"
+#. Default: "<p>Welcome to the new online group site for ${siteName}. We hope
+#. that this will be a useful way for everyone to discuss and share
+#. information.</p>"
 #: ./message.py:70
 msgid "default-welcome-message"
 msgstr ""
@@ -58,17 +59,17 @@ msgstr ""
 #. Default: "Greeting"
 #: ./interfaces.py:25
 msgid "greeting-entry-label"
-msgstr ""
+msgstr "Begrüßung"
 
 #. Default: "<p>There is an error:</p>"
 #: ./change.py:68
 msgid "status-problem"
-msgstr ""
+msgstr "<p>Es ist ein Fehler aufgetreten:</p>"
 
 #. Default: "<p>There are errors:</p>"
 #: ./change.py:71
 msgid "status-problems"
-msgstr ""
+msgstr "<p>Es sind mehrere Fehler aufgetreten:</p>"
 
 #. Default: "The text of the message that appears on the site homepage."
 #: ./interfaces.py:33
@@ -78,5 +79,4 @@ msgstr ""
 #. Default: "Message"
 #: ./interfaces.py:32
 msgid "welcome-message-entry-label"
-msgstr ""
-
+msgstr "Nachricht"
