@@ -1,6 +1,23 @@
 Changelog
 =========
 
+2.2.1 (2015-03-12)
+------------------
+
+* [FR] Updating the French translation, thanks to `Razique
+  Mahroua`_
+
+.. _Razique Mahroua:
+   https://www.transifex.com/accounts/profile/Razique/
+
+2.2.0 (2015-02-22)
+------------------
+
+* Adding internationalisation_
+
+.. _internationalisation:
+   https://www.transifex.com/projects/p/gs-site-welcome/
+
 2.1.2 (2014-11-10)
 ------------------
 
