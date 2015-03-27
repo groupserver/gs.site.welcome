@@ -5,6 +5,7 @@ Changelog
 ------------------
 
 * Fixing the Change button, with thanks to `Piers Goodhew`_
+* Fixing the page title
 
 .. _Piers Goodhew:
    http://groupserver.org/r/post/2hVVL0GRXYeVEwMvlf3vKb

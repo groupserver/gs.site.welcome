@@ -6,9 +6,8 @@
       metal:use-macro="context/@@groupserver_layout/page">
   <head>
     <title metal:fill-slot="title">
-      <span tal:replace="string:${view/label}: ${view/siteInfo/name}">
-        Change About
-      </span>
+      <tal:block replace="view/label" />:
+      <tal:block replace="view/siteInfo/name" />
     </title>
     <link metal:fill-slot="metadata" href="/" rel="up" title="Home"
           tal:attributes="title string:${view/siteInfo/name} Home"/>
