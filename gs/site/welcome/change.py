@@ -53,7 +53,7 @@ class Change(SiteForm):
             self.request, form=self, data=data,
             ignore_request=ignore_request)
 
-    @form.action(label=_('change-action', 'Change'), 
+    @form.action(label=_('change-action', 'Change'), name='change',
                  failure='handle_change_action_failure')
     def handle_change(self, action, data):
         self.welcomeMessage.greeting = data['greeting']

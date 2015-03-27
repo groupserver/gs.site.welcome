@@ -1,6 +1,14 @@
 Changelog
 =========
 
+2.2.2 (2015-03-27)
+------------------
+
+* Fixing the Change button, with thanks to `Piers Goodhew`_
+
+.. _Piers Goodhew:
+   http://groupserver.org/r/post/2hVVL0GRXYeVEwMvlf3vKb
+
 2.2.1 (2015-03-12)
 ------------------
 
@@ -71,4 +79,4 @@ Changelog
 
 * Initial import
 
-..  LocalWords:  WYMeditor
+..  LocalWords:  WYMeditor Changelog Razique Goodhew Mahroua
