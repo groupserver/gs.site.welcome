@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 ############################################################################
 #
-# Copyright © 2013, 2014 OnlineGroups.net and Contributors.
+# Copyright © 2013, 2014, 2016 OnlineGroups.net and Contributors.
 # All Rights Reserved.
 #
 # This software is subject to the provisions of the Zope Public License,
@@ -17,6 +17,7 @@ import os
 from setuptools import setup, find_packages
 from version import get_version
 
+name = 'gs.site.welcome'
 version = get_version()
 
 with codecs.open('README.rst', encoding='utf-8') as f:
@@ -27,7 +28,7 @@ with codecs.open(os.path.join("docs", "HISTORY.rst"),
 
 
 setup(
-    name='gs.site.welcome',
+    name=name,
     version=version,
     description="The Welcome message for a GroupServer site.",
     long_description=long_description,
@@ -47,10 +48,11 @@ setup(
              'welcome',
     author='Michael JasonSmith',
     author_email='mpj17@onlinegroups.net',
-    url='https://github.com/groupserver/gs.site.welcome/',
+    url='https://github.com/groupserver/{0}'.format(name),
     license='ZPL 2.1',
     packages=find_packages(exclude=['ez_setup']),
-    namespace_packages=['gs', 'gs.site', ],
+    namespace_packages=['.'.join(name.split('.')[:i])
+                        for i in range(1, len(name.split('.')))],
     include_package_data=True,
     zip_safe=False,
     install_requires=[
