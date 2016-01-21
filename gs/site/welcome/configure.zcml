@@ -49,10 +49,6 @@
     for="Products.GSContent.interfaces.IGSSiteFolder"
     class=".change.Change"
     permission="zope2.ManageProperties"/>
-  <browser:resource
-    name="gs-site-welcome-change-20130304.js"
-    file="browser/javascript/change.js"
-    permission="zope2.Public" />
   <browser:viewlet
     name="gs-site-welcome-change"
     for="Products.GSContent.interfaces.IGSSiteFolder"

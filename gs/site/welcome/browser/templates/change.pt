@@ -43,14 +43,15 @@
       </div><!--buttons-->
     </form>
     <tal:block metal:fill-slot="javascript">
-      <script src="/++resource++gs-site-welcome-change-20130304.js"
-              defer="true" type="text/javascript">&#160;</script>
+      <script type="text/javascript">
+        document.getElementById('form.greeting').focus();
+      </script>
       <script class="gs-content-js-wymeditor"
               type="text/javascript"
               data-text-element="#form\.message"
               data-submit="#form\.actions\.change"
               src="/++resource++wymeditor-1.1.1/gswymeditor-min.js"
-              defer="true"> </script>
+              defer="defer"> </script>
     </tal:block>
   </body>
 </html>
